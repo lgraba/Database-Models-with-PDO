@@ -1,0 +1,18 @@
+{
+    "name": "logan/database_models_with_pdo",
+    "description": "A short tutorial examining database models with PDO",
+    "authors": [
+        {
+            "name": "Logan Graba",
+            "email": "logangraba@gmail.com"
+        }
+    ],
+    
+    "require": {},
+
+    "autoload": {
+    	"psr-4": {
+    		"Logan\\": "app/Logan"
+    	}
+    }
+}

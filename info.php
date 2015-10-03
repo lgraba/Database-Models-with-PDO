@@ -1,3 +1,8 @@
+<?php
+// info.php
+// Simple script-a-roo for making sure I got those environmental variables set up correctly with Apache
+?>
+
 <h1>Hello!</h1>
 
 <p>Got it working by simply changing the DocumentRoot in /etc/Apache2/sites-enabled/000-default.conf.</p>

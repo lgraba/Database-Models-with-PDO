@@ -2,6 +2,9 @@
 // bootstrap.php
 // Helper function(s) and database PDO connection
 
+// Require in Composer's autoload file
+require_once 'vendor/autoload.php';
+
 // Database Connection
 $db = new PDO('mysql:host=localhost;dbname=db_models_tutorial', 'root', getenv('MYSQL_PASSWORD'));
 

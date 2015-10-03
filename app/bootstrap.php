@@ -2,6 +2,10 @@
 // bootstrap.php
 // Helper function(s) and database PDO connection
 
+// Report and display all PHP errors for development
+error_reporting(-1);
+ini_set('display_errors', 'On');
+
 // Require in Composer's autoload file
 require_once 'vendor/autoload.php';
 

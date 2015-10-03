@@ -16,3 +16,4 @@ Tutorial from Alex Garrett at CodeCourse - thanks man!
 4. Create a User class for our User Model
 5. Set up Composer with PSR-4 autoloading for all classes in Logan\Models\
 6. Implement some more methods in User Class
+7. Use Carbon library to manipulate datetimes within our User Model

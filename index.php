@@ -6,15 +6,16 @@
 require_once 'app/bootstrap.php';
 
 // Set user variable to database query
-$user = $db->query("
+$users = $db->query("
 	SELECT * FROM users
-	WHERE id = 1
 ");
 
 // Set the fetch mode to FETCH_CLASS via User class
-$user->setFetchMode(PDO::FETCH_CLASS, 'Logan\Models\User');
+$users->setFetchMode(PDO::FETCH_CLASS, 'Logan\Models\User');
 // Actually fetch the user as a class
-$user = $user->fetch();
+$users = $users->fetchAll();
 
-// User our helper function to dump the fetched user data
-echo 'Hello, ' . $user->getFullNameOrUsername() . '!';
+// Loop through our users and output name
+foreach($users as $user) {
+	echo $user->getFullNameOrUsername(), '<br>';
+}

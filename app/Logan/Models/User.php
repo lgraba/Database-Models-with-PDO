@@ -5,8 +5,13 @@
 // Namespace for Composer autoloading - see composer.json
 namespace Logan\Models;
 
-class User
+class User extends Base
 {
+	// Definition of datetime fields for User
+	protected $dates = [
+		'created',
+		'last_active',
+	];
 	// Return the user's first name
 	public function getFirstName()
 	{
